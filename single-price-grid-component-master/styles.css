@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: hsl(204, 43%, 93%);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 700px;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.upper {
+    padding: 40px;
+}
+
+.upper h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+.upper h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.upper p {
+    color: hsl(0, 0%, 21%);
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lower {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.l-div {
+    background: hsl(179, 62%, 43%);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.l-div h3 {
+    color: hsl(204, 43%, 93%);
+}
+
+.r-div {
+    background: hsl(179, 76%, 42%);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.details {
+    line-height: 20px;
+    color: hsl(204, 43%, 93%);
+}
+
+.pack {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pack h4 {
+    color: hsl(204, 43%, 93%);
+}
+
+.btn {
+    height: 40px;
+    font-size: medium;
+    background: hsl(71, 73%, 54%);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: hsl(204, 43%, 93%);
+}
+
+@media screen and (max-width: 475px) {
+    body {
+        display: flex;
+        height: 150vh;
+        width: 90%;
+        margin-inline: auto;
+    }
+    .lower {
+        grid-template-columns: 100%;
+    }
+}
